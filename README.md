@@ -1,5 +1,5 @@
 # JUnit-testing
-Eclipse, Maven, JUnit test
+Eclipse, Maven, Annotations, JUnit test
 
 The purpose of this project is to show up my basic skills about JUnit test framework.
 
