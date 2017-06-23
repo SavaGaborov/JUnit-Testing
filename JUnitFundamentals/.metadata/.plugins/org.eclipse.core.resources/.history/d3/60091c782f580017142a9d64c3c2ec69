@@ -1,0 +1,29 @@
+package com.savagaborov.junit.helper;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class StringHelperTest {
+
+	@Test
+	public void testTruncateAInFirst2Positions() {
+		
+		StringHelper helper = new StringHelper();
+		
+		//String actuak = helper.truncateAInFirst2Positions("AACD");
+		//String expected = "CD";
+		
+		//AACD => CD	ACD=> CD	CDEF=>CDEF	CDAA=>CDAA
+		assertEquals("CD", helper.truncateAInFirst2Positions("AACD"));
+		//expected, actual
+	}
+	
+	@Test
+	public void testTruncateAInFirst2Positions2() {
+		
+		StringHelper helper = new StringHelper();
+
+		assertEquals("CD", helper.truncateAInFirst2Positions("ACD"));
+	}
+}

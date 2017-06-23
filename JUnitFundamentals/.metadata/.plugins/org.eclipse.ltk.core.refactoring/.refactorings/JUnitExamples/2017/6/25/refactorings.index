@@ -1,2 +1,4 @@
 1498149338891	Inline local variable 'actual'
 1498149410131	Inline local variable 'expected'
+1498236124283	Inline local variable 'actualValue'
+1498236149340	Inline local variable 'expectedValue'
