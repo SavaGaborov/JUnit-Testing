@@ -1,0 +1,20 @@
+package com.savagaborov.junit.helper;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class StringHelperTest {
+
+	@Test
+	public void test() {
+		
+		StringHelper helper = new StringHelper();
+		helper.truncateAInFirst2Positions("AACD");
+		//AACD => CD	ACD=> CD	CDEF=>CDEF	CDAA=>CDAA
+		assertEquals("AACD", "ABC");
+		//expected, actual
+	}
+	
+	//expected:<ABC[]> but was:<ABC[D]>
+}
