@@ -1,0 +1,16 @@
+package com.savagaborov.junit.helper;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+
+public class ArraysCompareTest {
+	
+	//Arrays.sort
+	
+	@Test
+	public void test(){
+		
+	}
+
+}

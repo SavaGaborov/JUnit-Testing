@@ -1,0 +1,52 @@
+package com.savagaborov.junit.helper;
+
+import static org.junit.Assert.*;
+
+import java.util.Arrays;
+import java.util.Collection;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+@RunWith(Parameterized.class)
+public class StringHelperStringHelperParameterizedTest {
+	
+	//AACD => CD	ACD=> CD	CDEF=>CDEF	CDAA=>CDAA
+	
+	StringHelper helper = new StringHelper();
+	
+	private String input;
+	private String expectetOutput;
+	
+	
+	public StringHelperStringHelperParameterizedTest(String input, String expectetOutput) {
+		super();
+		this.input = input;
+		this.expectetOutput = expectetOutput;
+	}
+	
+	
+	@Parameters
+	public static Collection<String[]> testConditionals(){
+		String expectedOutputs [][] = { {"AACD", "CD"},						//input , output
+				{"ACD" , "CD"}	};
+			
+		return Arrays.asList(expectedOutputs);
+	}
+
+	//AACD => CD	ACD=> CD	CDEF=>CDEF	CDAA=>CDAA
+	@Test
+	public void testTruncateAInFirst2Positions_AInFirst2Positions() {			
+		assertEquals("CD", helper.truncateAInFirst2Positions("AACD"));						//1.assertEquals
+	}
+	
+	@Test
+	public void testTruncateAInFirst2Positions_AInFirstPosition() {
+		assertEquals("CD", helper.truncateAInFirst2Positions("ACD"));							
+		
+	}
+	
+	
+	
+}

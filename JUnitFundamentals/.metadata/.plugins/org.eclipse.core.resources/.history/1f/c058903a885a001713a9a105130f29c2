@@ -1,0 +1,27 @@
+package com.savagaborov.junit.helper;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class StringHelperStringHelperParameterizedTest {
+	
+	StringHelper helper = new StringHelper();
+
+	//AACD => CD	ACD=> CD	CDEF=>CDEF	CDAA=>CDAA
+	@Test
+	public void testTruncateAInFirst2Positions_AInFirst2Positions() {
+				
+		assertEquals("CD", helper.truncateAInFirst2Positions("AACD"));						//1.assertEquals
+	}
+	
+	@Test
+	public void testTruncateAInFirst2Positions_AInFirstPosition() {
+		
+		assertEquals("CD", helper.truncateAInFirst2Positions("ACD"));							
+		
+	}
+	
+	
+	
+}

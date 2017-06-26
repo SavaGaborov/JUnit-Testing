@@ -1,0 +1,23 @@
+package com.savagaborov.junit.helper;
+
+import static org.junit.Assert.*;
+
+import java.util.Arrays;
+
+import org.junit.Test;
+
+
+public class ArraysCompareTest {
+	
+	//Arrays.sort
+	
+	@Test
+	public void test(){
+		int [] number = {12,3,4,1};
+		int [] expected = {1,3,4,12};
+		Arrays.sort(number);
+		assertEquals(number , expected);
+		
+	}
+
+}
