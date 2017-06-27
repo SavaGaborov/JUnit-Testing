@@ -1,0 +1,25 @@
+package com.savagaborov.testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.savagaborov.classes.Car;
+
+public class CarTest {
+
+	//@Test
+	//public void test() {
+	//	fail("Not yet implemented");
+	//}
+
+	@Test
+	public void testForCarClass_NameMatching(){
+		
+		Car car = new Car();
+		car.setId(1);
+		car.setName("Tesla");
+		assertEquals("Tesla", car.getName());
+		
+	}
+}

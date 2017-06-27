@@ -1,0 +1,9 @@
+package com.savagaborov.junit.helper;
+
+public class JunitTesting {
+	
+	public int square(int x){
+		return x*x;
+	}
+
+}

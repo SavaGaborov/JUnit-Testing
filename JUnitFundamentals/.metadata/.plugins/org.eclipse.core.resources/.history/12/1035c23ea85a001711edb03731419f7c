@@ -1,0 +1,19 @@
+package com.savagaborov.junit.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.savagaborov.junit.helper.JunitTesting;
+
+public class SquareTest {
+	
+	JunitTesting test = new JunitTesting();
+
+	@Test
+	public void test() {
+		int output = test.square(5);
+		assertEquals(25, output);
+	}
+
+}

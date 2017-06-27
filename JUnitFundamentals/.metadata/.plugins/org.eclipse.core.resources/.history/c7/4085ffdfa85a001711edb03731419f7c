@@ -1,0 +1,18 @@
+package com.savagaborov.junit.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.savagaborov.junit.helper.JunitTesting;
+
+public class SquareTest {
+	
+	JunitTesting test = new JunitTesting();
+
+	@Test
+	public void testSquareMethod_SquareOfNumberFive() {
+		assertEquals(25, test.square(5));
+	}
+
+}

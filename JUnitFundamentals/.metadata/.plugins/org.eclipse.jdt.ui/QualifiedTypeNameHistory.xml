@@ -11,4 +11,9 @@
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="org.junit.runners.Parameterized.Parameters"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="com.savagaborov.junit.helper.JunitTesting"/>
+<fullyQualifiedTypeName name="com.savagaborov.classes.Car"/>
+<fullyQualifiedTypeName name="com.savagaborov.classes.Weapon"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

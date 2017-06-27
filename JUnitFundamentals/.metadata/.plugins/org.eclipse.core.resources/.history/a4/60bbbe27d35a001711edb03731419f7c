@@ -1,0 +1,10 @@
+package com.savagaborov.classes;
+
+import java.util.List;
+
+public class Weapon {
+	
+	public List<String> getWapon(){
+		return null;}
+
+}
